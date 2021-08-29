@@ -1,9 +1,9 @@
 name: Jekyll site CI
 on:
   pull_request:
-    branches: [ test2, test1 ]
+    branches: [ Test2, Test1 ]
   push:
-    branches: [ test2 ]
+    branches: [ Test2 ]
     paths:
       - 'wiki/en/*.md'
 jobs:
