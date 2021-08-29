@@ -2,7 +2,7 @@ name: Build and deploy jekyll site
 on:
   push:
     branches:
-      - release
+      - Test1
 jobs:
   build_and_deploy_site:
     permissions:
@@ -114,6 +114,6 @@ jobs:
         uses: devmasx/merge-branch@v1.3.1
         with:
           type: now
-          from_branch: release
-          target_branch: next-release
+          from_branch: Test1
+          target_branch: Test2
           github_token: ${{ github.token }}
