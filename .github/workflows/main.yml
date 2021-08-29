@@ -114,6 +114,6 @@ jobs:
         uses: devmasx/merge-branch@v1.3.1
         with:
           type: now
-          from_branch: release
-          target_branch: next-release
+          from_branch: test1
+          target_branch: test2
           github_token: ${{ github.token }}
