@@ -75,7 +75,7 @@ msgstr "</details>"
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:21
-msgid "TEST3"
+msgid "TEST4"
 msgstr ""
 
 #. type: Plain text
