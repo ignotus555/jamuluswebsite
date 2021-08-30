@@ -73,7 +73,7 @@ msgstr ""
 
 #. type: Plain text
 #: ../wiki/en/Client-Troubleshooting.md:21
-msgid "TEST2"
+msgid "TEST3"
 msgstr ""
 
 #. type: Plain text
