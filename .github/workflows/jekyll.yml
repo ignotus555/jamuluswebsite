@@ -39,11 +39,11 @@ jobs:
 
 # If there have been changes to English .md files in /wiki, run po4a-update-templates:
       - name: Update .po files
-        if: ${{ steps.filter.outputs.src_files_changed == 'true' }}
+        if: ${{ steps.filter.outputs.src_files_changed == 'true' && github.event_name == 'pull_request' }}
         run: ./_po4a-tools/po4a-update-templates.sh
 
 # This step only runs if a PR is merged:
-      - name: Push changes to repo if action triggered on:push and .po files need updating
+      - name: Push changes to repo if action triggered on:pull_request and .po files need updating
         if: ${{ steps.filter.outputs.src_files_changed == 'true' && github.event_name == 'pull_request' }}
         uses: EndBug/add-and-commit@v7
         with:
